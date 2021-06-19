@@ -102,6 +102,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.1;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -137,6 +139,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.1;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .site-contact .link:hover,
 .site-contact .link:focus {
@@ -201,6 +204,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
     font-weight: 700;
     line-height: 1.9;
+    cursor: pointer;
+    /*transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+    transition-delay: 250ms;*/
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .button-order:hover,
 .button-order:focus {
@@ -348,7 +357,8 @@ background: #F5F4FA;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: var(--main-bg-color)
+    background-color: var(--main-bg-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socialnet .link:hover,
 .socialnet .link:focus {
@@ -392,6 +402,7 @@ background: #F5F4FA;
     align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .klient-logo {
@@ -442,6 +453,7 @@ background: #F5F4FA;
     font-style: normal;
     font-weight: 400;
     line-height: 1.7;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adres-link:hover,
 .adres-link:focus {
@@ -478,6 +490,7 @@ background: #F5F4FA;
     height: 44px;
     border-radius: 50%;
     background-color: #FFFFFF1A;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socialnet-footer .link:hover,
 .socialnet-footer .link:focus {
@@ -508,6 +521,9 @@ background: #F5F4FA;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6; 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .button-filter:hover,
@@ -559,6 +575,7 @@ margin-bottom: 30px;
     border-right: 1px solid #EEEEEE; 
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-project:hover,
 .card-project:focus {
@@ -580,6 +597,7 @@ width: 370px;
 height: 294px;
 background: rgba(33, 150, 243, 0.9);
 opacity: 0;
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .example-project:hover::before {
     opacity: 1;
@@ -593,6 +611,7 @@ opacity: 0;
     font-weight: 400;
     line-height: 1.6;
     opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .example-project:hover .text-project {
     opacity: 1;
